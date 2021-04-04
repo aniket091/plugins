@@ -64,7 +64,7 @@ class Suggest(commands.Cog):
                 message_ = await suggestion_channel.send(embed=embed)
                 await message_.add_reaction("⬆️")
                 await message_.add_reaction("⬇️")
-                await ctx.message.add_reaction("\N{THUMBS UP SIGN}")
+                await ctx.message.add_reaction("👍")
                 await ctx.send(embed=discord.Embed(color=0x00ff5a, title=f"✅ Suggestion has been sent to the suggestion channel!"))
                 await asyncio.sleep(5)
                 embed.set_footer(text=f"Msg ID :- {message_.id}")
