@@ -4,6 +4,7 @@ from core import checks
 from core.models import PermissionLevel, getLogger
 import re
 import asyncio
+from .utils.util import Pag
 
 logger = getLogger(__name__)
 
@@ -885,8 +886,26 @@ class moderation(commands.Cog):
             userw = []
         else:
             userw = userwarns.copy()
-        logger.info(f"config - || {config}  ||")    
-        logger.info(f"warns - || {userwarns}  ||")    
+        
+        logger.info(f"warns - || {userwarns}  ||")  
+
+        pages = []
+        for warn in userw:
+            description = f"""
+            No of warns: `{len(userw)}`
+            Warn Reason: `{warn['reason']}`
+            Warned By: `<@{warn['mod']}>`
+            """
+            pages.append(description)
+            logger.info(f"warns - || {warn['reason']} , {warn['mod']} ||")  
+        
+        await Pag(
+            title=f"Warns for `{member.display_name}`",
+            colour=0xCE2029,
+            entries=pages,
+            length=1
+        ).start(ctx)
+  
   
 
 def setup(bot):
