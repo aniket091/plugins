@@ -38,7 +38,7 @@ class Attendance(commands.Cog):
       mem = len(rolee.members)
 
       #edit embed
-      embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/753641714102566964/828670675110985739/parth-yt.gif")
+      embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/820561651584466964/828685264481550376/yt-eternal.gif")
       embed.set_field_at(index, name=nickn, value="**Status :-** ***Online <:online:818798477223002143>***", inline=False) 
       embed.set_author(name=f"YT STAFF STATUS - {mem} Active Moderators")
       await message.edit(embed=embed)
@@ -76,7 +76,7 @@ class Attendance(commands.Cog):
       mem = len(rolee.members)
 
       #edit embed
-      embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/753641714102566964/828670675110985739/parth-yt.gif")
+      embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/820561651584466964/828685264481550376/yt-eternal.gif")
       embed.set_field_at(index, name=nickn, value="**Status :-** ***Offline <:offline:818798355706150953>***", inline=False)  
       embed.set_author(name=f"YT STAFF STATUS - {mem} Active Moderators")
       await message.edit(embed=embed)
@@ -112,7 +112,7 @@ class Attendance(commands.Cog):
         mem = len(rolee.members)
 
         #edit embed
-        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/753641714102566964/828670675110985739/parth-yt.gif")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/820561651584466964/828685264481550376/yt-eternal.gif")
         embed.set_field_at(index, name=nickn, value="**Status :-** ***Online <:online:818798477223002143>***", inline=False) 
         embed.set_author(name=f"YT STAFF STATUS - {mem} Active Moderators")
         await message.edit(embed=embed)
@@ -155,7 +155,7 @@ class Attendance(commands.Cog):
         mem = len(rolee.members)
 
         #edit embed
-        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/753641714102566964/828670675110985739/parth-yt.gif")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/820561651584466964/828685264481550376/yt-eternal.gif")
         embed.set_field_at(index, name=nickn, value="**Status :-** ***Offline <:offline:818798355706150953>***", inline=False) 
         embed.set_author(name=f"YT STAFF STATUS - {mem} Active Moderators")
         await message.edit(embed=embed)
