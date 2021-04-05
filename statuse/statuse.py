@@ -15,7 +15,7 @@ class utility(commands.Cog):
       server = self.bot.get_guild(686445229687177228)  #eternal's server
       await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"{server.member_count} Members!"))
       await asyncio.sleep(10)
-      await self.bot.change_presence(activity=discord.Activity(type=discord.Game, name=f"Message me for help!"))
+      await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"Message me for help!"))
       await asyncio.sleep(10)
       await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=f"!help"))
       await asyncio.sleep(10)
