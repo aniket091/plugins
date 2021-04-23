@@ -46,7 +46,7 @@ class ServerStat(commands.Cog):
       desc = "```Elm"     
       desc += f"\nCPU: Intel(R) Xeon(R) CPU E5-2670 v2 (2.50GHz)\nCPU Usage: {psutil.cpu_percent()}% \n\n"
       desc += f"Cores (Physical): {psutil.cpu_count(logical=False)} \nCores (Total): {psutil.cpu_count(logical=True)}"
-      desc += "\n------------------------------------- \nTotal Devices: 4\n\n"
+      desc += "\n------------------------------------- \nTotal Devices: 3\n\n"
       desc += f"Memory Usage (w/ buffers): {round(psutil.virtual_memory().used /1024/1024/1024, 2)} GB/{round(psutil.virtual_memory().total /1024/1024/1024, 2)} GB \nAvailable: {round(psutil.virtual_memory().available /1024/1024/1024, 2)} GB"
       desc += "\n-------------------------------------"
       desc += f"\nDisk Usage: {round(psutil.disk_usage('/').used /1024/1024/1024, 2)} GB/{round(psutil.disk_usage('/').total /1024/1024/1024, 2)} GB"
