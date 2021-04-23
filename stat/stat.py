@@ -26,7 +26,7 @@ class ServerStat(commands.Cog):
           upsert=True,
       ) 
 
-    @tasks.loop(seconds=6)
+    @tasks.loop(seconds=4)
     async def serverr(self):
       config = await self.db.find_one({"_id": "config"})
       if not config:
